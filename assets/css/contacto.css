@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* ESTILOS ÚNICOS DE LA PÁGINA DE CONTACTO */
+/* estilos para los elementos HTML COMUNES que aparecen en TODAS LAS PÁGINAS */
+/* Estilos básicos de configuración de toda la web */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* fuentes */
+@font-face {
+  font-family: "anton";
+  src: url("../fonts/Anton-Regular.ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+/* variables */
+/* Encabezados */
+h1 {
+  font-size: 1.5rem;
+  font-family: "anton";
+}
+
+h2, h3 {
+  font-family: "anton";
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a, p, cite, span {
+  font-family: "poppins";
+}
+
+a, p {
+  font-size: 0.9rem;
+}
+
+cite {
+  margin: 0 1.5rem;
+  padding: 0 1.5rem;
+  font-size: 1.3rem;
+  color: rgb(148, 148, 148);
+  border-left: 3px solid rgb(243, 160, 160);
+}
+
+/* estilos globales básicos de estructura*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+body, nav, header, main, footer, section {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+nav, main, header, footer, section {
+  max-width: 2560px;
+}
+
+main, section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+section {
+  row-gap: 2.5rem;
+}
+
+.art01 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 2rem;
+}
+@media only screen and (min-width: 1350px) {
+  .art01 {
+    width: 80%;
+  }
+}
+.art01 > :nth-child(1) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.art01 > :nth-child(1) > img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+@media only screen and (min-width: 750px) {
+  .art01 > :nth-child(2) {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .art01 > :nth-child(2) {
+    width: 60%;
+  }
+}
+.art01 > :nth-child(3) {
+  width: 100%;
+}
+@media only screen and (min-width: 750px) {
+  .art01 > :nth-child(3) {
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .art01 > :nth-child(3) {
+    height: 300px;
+  }
+}/*# sourceMappingURL=contacto.css.map */
